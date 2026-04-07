@@ -9,9 +9,10 @@ import UIKit
 
 class TeamViewController: UIViewController {
 
+    var teamName: String?
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
         // Do any additional setup after loading the view.
     }
     

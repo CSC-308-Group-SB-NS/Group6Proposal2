@@ -11,7 +11,6 @@
         <!--Project Proposal-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
                 <viewController id="BYZ-38-t0r" customClass="IndexViewController" customModule="GroupProposal2" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
@@ -43,6 +42,7 @@
                                 <sections/>
                                 <connections>
                                     <outlet property="dataSource" destination="BYZ-38-t0r" id="Cst-nb-NYx"/>
+                                    <outlet property="delegate" destination="BYZ-38-t0r" id="jJj-9F-SEk"/>
                                 </connections>
                             </tableView>
                         </subviews>
@@ -56,34 +56,69 @@
                     </view>
                     <navigationItem key="navigationItem" title="Project Proposal" id="a1Q-CR-ChO"/>
                     <connections>
-                        <segue destination="P3B-aC-Zql" kind="show" id="e1Z-fI-7uS"/>
-                        <segue destination="Di8-ha-k0u" kind="show" id="ZNp-1q-27Y"/>
-                        <segue destination="GMN-km-wXE" kind="show" id="BN6-Sh-CdP"/>
+                        <segue destination="P3B-aC-Zql" kind="show" identifier="TeamView" id="TaN-gV-r5e"/>
+                        <segue destination="GMN-km-wXE" kind="show" identifier="ExampleView" id="RAg-u3-20V"/>
+                        <segue destination="Di8-ha-k0u" kind="show" identifier="InfoView" id="49C-PH-gdA"/>
                     </connections>
                 </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1040.4580152671756" y="-27.464788732394368"/>
         </scene>
         <!--Team Member-->
         <scene sceneID="9fo-f3-GhO">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="EV0-Mi-FH8" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-                <viewController id="P3B-aC-Zql" sceneMemberID="viewController">
+                <viewController id="P3B-aC-Zql" customClass="TeamViewController" customModule="GroupProposal2" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="obs-ah-P8d">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Name Here" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cJo-GQ-QZv">
+                                <rect key="frame" x="30" y="182" width="333" height="45"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="45" id="MxW-k7-gnF"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="35"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="jYz-DQ-FON">
+                                <rect key="frame" x="35" y="492" width="323" height="272"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="272" id="88O-ob-pPK"/>
+                                </constraints>
+                            </imageView>
+                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Team  Member info Goes Here" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="L9M-PE-j1m">
+                                <rect key="frame" x="20" y="247" width="353" height="225"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="3f7-47-mFY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="3f7-47-mFY" firstAttribute="trailing" secondItem="jYz-DQ-FON" secondAttribute="trailing" constant="35" id="KFz-xe-N6N"/>
+                            <constraint firstItem="L9M-PE-j1m" firstAttribute="top" secondItem="cJo-GQ-QZv" secondAttribute="bottom" constant="20" id="LNR-St-b0e"/>
+                            <constraint firstItem="cJo-GQ-QZv" firstAttribute="leading" secondItem="3f7-47-mFY" secondAttribute="leading" constant="30" id="P6m-q2-qOI"/>
+                            <constraint firstItem="jYz-DQ-FON" firstAttribute="leading" secondItem="3f7-47-mFY" secondAttribute="leading" constant="35" id="RpR-pa-vAY"/>
+                            <constraint firstItem="3f7-47-mFY" firstAttribute="bottom" secondItem="jYz-DQ-FON" secondAttribute="bottom" constant="20" id="Ufw-Tt-SmQ"/>
+                            <constraint firstItem="3f7-47-mFY" firstAttribute="trailing" secondItem="L9M-PE-j1m" secondAttribute="trailing" constant="20" id="WV5-nh-xCe"/>
+                            <constraint firstItem="3f7-47-mFY" firstAttribute="trailing" secondItem="cJo-GQ-QZv" secondAttribute="trailing" constant="30" id="c78-gP-BfL"/>
+                            <constraint firstItem="L9M-PE-j1m" firstAttribute="leading" secondItem="3f7-47-mFY" secondAttribute="leading" constant="20" id="cM1-lN-ewQ"/>
+                            <constraint firstItem="cJo-GQ-QZv" firstAttribute="top" secondItem="3f7-47-mFY" secondAttribute="top" constant="20" id="m3o-jN-ILm"/>
+                            <constraint firstItem="jYz-DQ-FON" firstAttribute="top" secondItem="L9M-PE-j1m" secondAttribute="bottom" constant="20" id="ndF-h7-N5g"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Team Member" id="FjU-Av-iIm"/>
                 </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="EV0-Mi-FH8" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1965.6488549618321" y="-27.464788732394368"/>
         </scene>
         <!--Example UI-->
         <scene sceneID="8FP-eq-2sY">
             <objects>
-                <viewController id="GMN-km-wXE" sceneMemberID="viewController">
+                <viewController id="GMN-km-wXE" customClass="ExampleViewController" customModule="GroupProposal2" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="RUA-Lt-N5X">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -99,7 +134,7 @@
         <!--Project Info-->
         <scene sceneID="IiO-Qs-hRn">
             <objects>
-                <viewController id="Di8-ha-k0u" sceneMemberID="viewController">
+                <viewController id="Di8-ha-k0u" customClass="InfoViewController" customModule="GroupProposal2" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="NeN-5l-Q63">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>

@@ -6,8 +6,17 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		5E3456FE2F84B03500D44E80 /* TeamViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E3456FD2F84B03500D44E80 /* TeamViewController.swift */; };
+		5E3457002F84B05100D44E80 /* ExampleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E3456FF2F84B05100D44E80 /* ExampleViewController.swift */; };
+		5E3457022F84B05D00D44E80 /* InfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E3457012F84B05D00D44E80 /* InfoViewController.swift */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXFileReference section */
 		45C46EBA2F845EBB004088CE /* GroupProposal2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GroupProposal2.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		5E3456FD2F84B03500D44E80 /* TeamViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeamViewController.swift; sourceTree = "<group>"; };
+		5E3456FF2F84B05100D44E80 /* ExampleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExampleViewController.swift; sourceTree = "<group>"; };
+		5E3457012F84B05D00D44E80 /* InfoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
@@ -45,6 +54,9 @@
 		45C46EB12F845EBB004088CE = {
 			isa = PBXGroup;
 			children = (
+				5E3456FF2F84B05100D44E80 /* ExampleViewController.swift */,
+				5E3457012F84B05D00D44E80 /* InfoViewController.swift */,
+				5E3456FD2F84B03500D44E80 /* TeamViewController.swift */,
 				45C46EBC2F845EBB004088CE /* GroupProposal2 */,
 				45C46EBB2F845EBB004088CE /* Products */,
 			);
@@ -132,6 +144,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5E3456FE2F84B03500D44E80 /* TeamViewController.swift in Sources */,
+				5E3457022F84B05D00D44E80 /* InfoViewController.swift in Sources */,
+				5E3457002F84B05100D44E80 /* ExampleViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

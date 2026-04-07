@@ -9,21 +9,29 @@ import UIKit
 
 class InfoViewController: UIViewController {
 
+    var projectDetail: String?
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
         // Do any additional setup after loading the view.
     }
     
 
     /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-    }
+     
+     
+    1) Animations
+    2) Table Views
+    3) Classes
+    4) Extensions
+    5) Safe Wrapping
+    6) Protocols
+    7) Closures
+    8) Sending data through pages
+    9) Alerts
+        On our own
+    10) Grids
+    11) Adding UIs to table view
     */
 
 }
