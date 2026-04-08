@@ -18,7 +18,7 @@
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="insetGrouped" separatorStyle="singleLineEtched" allowsSelectionDuringEditing="YES" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="18" estimatedSectionHeaderHeight="-1" sectionFooterHeight="18" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="ZtV-E2-icp">
                                 <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
-                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <color key="backgroundColor" systemColor="opaqueSeparatorColor"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="basicCell" textLabel="EeU-TM-IFo" style="IBUITableViewCellStyleDefault" id="EGp-nJ-yvM">
                                         <rect key="frame" x="20" y="55.333332061767578" width="353" height="43.666667938232422"/>
@@ -95,7 +95,7 @@
                             </textField>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="3f7-47-mFY"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <color key="backgroundColor" systemColor="opaqueSeparatorColor"/>
                         <constraints>
                             <constraint firstItem="3f7-47-mFY" firstAttribute="trailing" secondItem="jYz-DQ-FON" secondAttribute="trailing" constant="35" id="KFz-xe-N6N"/>
                             <constraint firstItem="L9M-PE-j1m" firstAttribute="top" secondItem="cJo-GQ-QZv" secondAttribute="bottom" constant="20" id="LNR-St-b0e"/>
@@ -123,7 +123,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <viewLayoutGuide key="safeArea" id="bxQ-zq-Ldx"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <color key="backgroundColor" systemColor="opaqueSeparatorColor"/>
                     </view>
                     <navigationItem key="navigationItem" title="Example UI" id="7lb-v8-S0R"/>
                 </viewController>
@@ -161,7 +161,7 @@
                             </textField>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="Awe-SB-5C9"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <color key="backgroundColor" systemColor="opaqueSeparatorColor"/>
                         <constraints>
                             <constraint firstItem="sA9-RX-N00" firstAttribute="centerX" secondItem="pmw-Cl-dc2" secondAttribute="centerX" id="6P6-aN-SsG"/>
                             <constraint firstItem="sA9-RX-N00" firstAttribute="leading" secondItem="Awe-SB-5C9" secondAttribute="leading" constant="20" id="6iy-2Y-DRA"/>
@@ -201,8 +201,8 @@
         </scene>
     </scenes>
     <resources>
-        <systemColor name="systemBackgroundColor">
-            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        <systemColor name="opaqueSeparatorColor">
+            <color red="0.77647058820000003" green="0.77647058820000003" blue="0.7843137255" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>
