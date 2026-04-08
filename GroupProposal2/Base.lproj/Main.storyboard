@@ -138,8 +138,42 @@
                     <view key="view" contentMode="scaleToFill" id="NeN-5l-Q63">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Project Info Here" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SWm-ZT-v3R">
+                                <rect key="frame" x="30" y="185" width="333" height="45"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="45" id="pbu-0f-5uL"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="35"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="pmw-Cl-dc2">
+                                <rect key="frame" x="35" y="495" width="323" height="272"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="272" id="l6I-oH-f8Z"/>
+                                </constraints>
+                            </imageView>
+                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Project info goes here" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="sA9-RX-N00">
+                                <rect key="frame" x="20" y="250" width="353" height="225"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="Awe-SB-5C9"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="sA9-RX-N00" firstAttribute="centerX" secondItem="pmw-Cl-dc2" secondAttribute="centerX" id="6P6-aN-SsG"/>
+                            <constraint firstItem="sA9-RX-N00" firstAttribute="leading" secondItem="Awe-SB-5C9" secondAttribute="leading" constant="20" id="6iy-2Y-DRA"/>
+                            <constraint firstItem="SWm-ZT-v3R" firstAttribute="centerX" secondItem="NeN-5l-Q63" secondAttribute="centerX" id="Fk8-L5-Smb"/>
+                            <constraint firstItem="pmw-Cl-dc2" firstAttribute="top" secondItem="sA9-RX-N00" secondAttribute="bottom" constant="20" id="LjV-MQ-s8O"/>
+                            <constraint firstItem="sA9-RX-N00" firstAttribute="top" secondItem="SWm-ZT-v3R" secondAttribute="bottom" constant="20" id="Mkp-wU-2k2"/>
+                            <constraint firstItem="SWm-ZT-v3R" firstAttribute="leading" secondItem="Awe-SB-5C9" secondAttribute="leading" constant="30" id="XiJ-hX-ws0"/>
+                            <constraint firstItem="SWm-ZT-v3R" firstAttribute="top" secondItem="Awe-SB-5C9" secondAttribute="top" constant="23" id="bSk-36-dM7"/>
+                            <constraint firstItem="Awe-SB-5C9" firstAttribute="bottom" secondItem="pmw-Cl-dc2" secondAttribute="bottom" constant="17" id="swv-bc-YS2"/>
+                            <constraint firstItem="SWm-ZT-v3R" firstAttribute="centerX" secondItem="sA9-RX-N00" secondAttribute="centerX" id="t8e-g9-8bA"/>
+                            <constraint firstItem="pmw-Cl-dc2" firstAttribute="leading" secondItem="Awe-SB-5C9" secondAttribute="leading" constant="35" id="yfl-TU-399"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Project Info" id="Ukd-jd-fgH"/>
                 </viewController>
